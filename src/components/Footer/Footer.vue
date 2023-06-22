@@ -1,5 +1,6 @@
 <script setup>
 import Widget from './Widget.vue';
+import Social from './Social.vue';
 </script>
 
 <template>
@@ -11,7 +12,7 @@ import Widget from './Widget.vue';
             </div>
         </Widget>
         <Widget heading="Social">
-            <p>Lorem ipsum</p>
+            <Social />
         </Widget>
         <Widget heading="Chat">
             <!-- BEGIN CBOX - www.cbox.ws - v4.3 -->
