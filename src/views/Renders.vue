@@ -13,8 +13,8 @@ function getThumbnail(id) {
 <template>
   <div>
     <h1>Renders</h1>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-      <div v-for="post in posts.items" class="text-left flex flex-col mb-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+      <div v-for="post in posts.items" class="text-left flex flex-col mb-3">
         <PatternHeading>{{ post.fields.title }}</PatternHeading>
         <img :src="getThumbnail(post.fields.thumbnail.sys.id)" class="mb-1" />
         <div class="bg-dark text-white gap-1 p-3">

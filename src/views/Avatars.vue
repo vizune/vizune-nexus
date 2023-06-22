@@ -36,8 +36,8 @@
     </div>
 
     <PatternHeading>100 x 100</PatternHeading>
-    <div class="grid gap-4 wrapper100">
-      <div v-for="post in posts100.items" class="text-left flex mb-6">
+    <div class="grid gap-4 wrapper100 mb-6">
+      <div v-for="post in posts100.items" class="text-left flex">
         <img :src="getThumbnail(post.fields.asset.sys.id, posts100)" class="w-[100px] h-[100px]" />
         <div class="bg-stone text-white gap-1 p-2 grow justify-center items-center flex h-[100]">
           <span class="text-xs text-center break-words">{{ post.fields.category }}</span>
@@ -46,8 +46,8 @@
     </div>
 
     <PatternHeading>200 x 200</PatternHeading>
-    <div class="grid gap-4 wrapper200">
-      <div v-for="post in posts200.items" class="text-left flex flex-col mb-6 w-[200px]">
+    <div class="grid gap-4 wrapper200 mb-5">
+      <div v-for="post in posts200.items" class="text-left flex flex-col w-[200px]">
         <img :src="getThumbnail(post.fields.asset.sys.id, posts200)" />
         <div class="bg-stone text-white gap-1 p-2 grow text-center align-center">
           <span class="text-xs text-center break-words">{{ post.fields.category }}</span>
@@ -57,7 +57,7 @@
 
     <PatternHeading>400 x 400</PatternHeading>
     <div class="grid gap-4 wrapper400">
-      <div v-for="post in posts400.items" class="text-left flex flex-col mb-6 w-[400px]">
+      <div v-for="post in posts400.items" class="text-left flex flex-col w-[400px]">
         <img :src="getThumbnail(post.fields.asset.sys.id, posts400)" />
         <div class="bg-stone text-white gap-1 p-2 grow text-center align-center">
           <span class="text-xs text-center break-words">{{ post.fields.category }}</span>
@@ -74,8 +74,10 @@
 }
 .wrapper200 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
 }
 .wrapper400 {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
 }
 </style>
