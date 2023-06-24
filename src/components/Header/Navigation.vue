@@ -23,7 +23,7 @@ const nav = [
 
 <template>
     <nav id="navigation mt-4">
-        <ul class="flex flex-col">
+        <ul class="flex flex-col list-none p-0">
             <NavigationLink v-for="item in nav" :page="item.page" :link="item.link" />
         </ul>
     </nav>

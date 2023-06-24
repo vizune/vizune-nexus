@@ -25,12 +25,12 @@
         <PatternHeading>{{ post.fields.title }}</PatternHeading>
         <img :src="getThumbnail(post.fields.banner.sys.id)" class="mb-1" />
         <div class="bg-dark text-white grow flex flex-col gap-1 p-3">
-          <p><strong>Publish Date:</strong> {{ convertPublishDate(post.fields.publishDate) }}</p>
-          <p v-if="post.fields.category"><strong>Category:</strong> {{ post.fields.category }}</p>
-          <p v-if="post.fields.series">
+          <p class="mb-0"><strong>Publish Date:</strong> {{ convertPublishDate(post.fields.publishDate) }}</p>
+          <p v-if="post.fields.category" class="mb-0"><strong>Category:</strong> {{ post.fields.category }}</p>
+          <p v-if="post.fields.series" class="mb-0">
             <strong>{{ post.fields.category && post.fields.category === "Mangaka/Artist" ? "Artist:" : "Series:" }}</strong> {{ post.fields.series }}
           </p>
-          <p v-if="post.fields.character"><strong>Character:</strong> {{ post.fields.character }}</p>
+          <p v-if="post.fields.character" class="mb-0"><strong>Character:</strong> {{ post.fields.character }}</p>
         </div>
         <div class="flex justify-center gap-1 mt-1">
           <a :href="post.fields.demoUrl" target="_blank" class="button w-full">Preview</a>

@@ -10,7 +10,7 @@ provide('selectedTitle', selectedTitle)
 
 <template>
     <div class="tabs">
-        <ul class="flex justify-center gap-4 mb-6">
+        <ul class="flex justify-center gap-4 mb-6 list-none">
             <li
                 v-for="title in tabTitles"
                 :key="title"

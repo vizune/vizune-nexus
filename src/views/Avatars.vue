@@ -12,7 +12,6 @@
 
   const posts400 = await fetch(POSTS_AVATARS_400)
   .then((r) => r.json());
-
 </script>
 
 <template>

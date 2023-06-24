@@ -18,7 +18,7 @@ function getThumbnail(id) {
         <PatternHeading>{{ post.fields.title }}</PatternHeading>
         <img :src="getThumbnail(post.fields.thumbnail.sys.id)" class="mb-1" />
         <div class="bg-dark text-white gap-1 p-3">
-          <p><strong>Dimensions</strong>: {{ post.fields.imageDimensions }}</p>
+          <p class="m-0"><strong>Dimensions</strong>: {{ post.fields.imageDimensions }}</p>
         </div>
         <div class="flex justify-center mt-1">
           <a :href="post.fields.downloadUrl" target="_blank" class="button w-full">Preview / Download</a>
