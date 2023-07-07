@@ -3,6 +3,7 @@
 import * as contentful from 'contentful';
 import { MARKS } from '@contentful/rich-text-types';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { convertDate } from '../utilities/convertDate';
 import { cSpace, cAccessToken }  from '../../config.js';
 
 const client = contentful.createClient({
@@ -21,7 +22,10 @@ const options = {
 
 client.getEntry('v9VSZDcP1Xi67fowhL44G')
 .then((entry) => {
+  console.log(entry)
   const rawRichTextField = entry.fields.content;
+  document.getElementById('publish-date').innerHTML = convertDate(entry.fields.publishDate);
+  document.getElementById('title').innerHTML = entry.fields.title;
   return documentToHtmlString(rawRichTextField, options);
 })
 .then((renderedHtml) => {
@@ -49,8 +53,16 @@ s.setAttribute('data-timestamp', +new Date());
 
 <template>
     <div>
-        <div id="rich-text-body"></div>
+        <hr />
+        <span id="publish-date" class="block text-sm font-bold mt-4"></span>
+        <span id="title" class="block text-xl font-bold mb-4"></span>
+        <hr />
+        <div id="rich-text-body" class="my-4"></div>
+        <hr />
 <!--    <div id="disqus_thread"></div>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
     </div>
 </template>
+
+<style scoped>
+</style>

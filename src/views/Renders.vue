@@ -1,37 +1,68 @@
 <script setup>
-import { POSTS_RENDERS } from '../../config.js';
-import PatternHeading from '../components/PatternHeading.vue';
+import { ref, watch } from 'vue';
+import { POSTS_RENDERS, tagReference } from '../../config.js';
+import FilterDropdown from '../components/FilterDropdown.vue';
+import Pagination from '../components/Pagination/Pagination.vue';
 
 const posts = await fetch(POSTS_RENDERS)
 .then((r) => r.json());
 
-function getThumbnail(id) {
-  return posts.includes.Asset.find(post => post.sys.id === id).fields.file.url
+const sortedPostsByTitle = posts.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
+
+const getTags = () => {
+  let tags = [];
+
+  sortedPostsByTitle.map(post => {
+    post.metadata.tags.map(m => {
+      if(m.sys.id !== 'renders') tags.push(m.sys.id)
+    })
+  })
+
+  return [...new Set(tags)].sort();
 }
+
+const tagSelected = ref('');
+let selectedPosts = sortedPostsByTitle;
+
+watch(tagSelected, (newTagSelected) => {
+  if (newTagSelected.length === 0) {
+    selectedPosts = sortedPostsByTitle;
+  }
+  else {
+    selectedPosts = sortedPostsByTitle;
+    let sortedPosts = [];
+    sortedPostsByTitle.map(post => {
+      if (post.metadata.tags.find(tag => tag.sys.id === newTagSelected)) sortedPosts.push(post)
+    })
+    selectedPosts = sortedPosts;
+  }
+})
+
+const getTagCount = (tagOption) => {
+  let count = 0;
+
+  sortedPostsByTitle.map(post => {
+    if (post.metadata.tags.find(tag => tag.sys.id === tagOption)) count++;
+  })
+
+  return count;
+}
+
 </script>
 
 <template>
   <div>
     <h1>Renders</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-      <div v-for="post in posts.items" class="text-left flex flex-col mb-3">
-        <PatternHeading>{{ post.fields.title }}</PatternHeading>
-        <img :src="getThumbnail(post.fields.thumbnail.sys.id)" class="mb-1" />
-        <div class="bg-dark text-white gap-1 p-3">
-          <p class="m-0"><strong>Dimensions</strong>: {{ post.fields.imageDimensions }}</p>
-        </div>
-        <div class="flex justify-center mt-1">
-          <a :href="post.fields.downloadUrl" target="_blank" class="button w-full">Preview / Download</a>
-        </div>
-      </div>
-    </div>
+    <FilterDropdown v-model="tagSelected" :values="getTags()">
+      <option value="">Filter renders</option>
+      <option v-for="tag in getTags()" :key="tag" :value="tag">{{ tagReference[tag] }} {{ `(${getTagCount(tag)})` }}</option>
+    </FilterDropdown>
+    <Pagination
+      :items="selectedPosts"
+      :itemsPerPage="12"
+      :gridClass="`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5`"
+      :assets="posts.includes.Asset"
+      category="renders"
+    />
   </div>
 </template>
-
-<style scoped>
-h2 {
-  margin-bottom: 0.25rem;
-  flex-grow: 1;
-  height: 80px;
-}
-</style>

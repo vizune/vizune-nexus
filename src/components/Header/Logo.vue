@@ -3,7 +3,7 @@
 
 <template>
     <div id="logo">
-        <img src="logo.png" alt="Vizune" />
+        <img src="/logo.png" alt="Vizune" />
     </div>
 </template>
 

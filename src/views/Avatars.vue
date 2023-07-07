@@ -12,6 +12,11 @@
 
   const posts400 = await fetch(POSTS_AVATARS_400)
   .then((r) => r.json());
+
+  const sortedPosts100 = posts100.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
+  const sortedPosts200 = posts200.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
+  const sortedPosts400 = posts400.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
+
 </script>
 
 <template>
@@ -22,21 +27,27 @@
         <AvatarCategory 
           :category="100"
           title="100 x 100 avatars"
-          :posts="posts100"
+          :posts="sortedPosts100"
+          :assets="posts100.includes.Asset"
+          :itemsPerPage="20"
         />
       </TabItem>
       <TabItem title="200 x 200">
         <AvatarCategory 
           :category="200"
           title="200 x 200 avatars"
-          :posts="posts200"
+          :posts="sortedPosts200"
+          :assets="posts200.includes.Asset"
+          :itemsPerPage="10"
         />
       </TabItem>
       <TabItem title="400 x 400">
         <AvatarCategory 
           :category="400"
           title="400 x 400 avatars"
-          :posts="posts400"
+          :posts="sortedPosts400"
+          :assets="posts400.includes.Asset"
+          :itemsPerPage="6"
         />
       </TabItem>
     </Tabs>
