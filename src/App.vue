@@ -3,6 +3,7 @@ import Header from './components/Header/Header.vue'
 import Logo from './components/Header/Logo.vue'
 import Navigation from './components/Header/Navigation.vue'
 import Footer from './components/Footer/Footer.vue'
+import LiveChat from './components/LiveChat.vue'
 </script>
 
 <template>
@@ -17,5 +18,6 @@ import Footer from './components/Footer/Footer.vue'
       </Suspense>
     </div>
     <Footer  />
+    <LiveChat />
   </div>
 </template>

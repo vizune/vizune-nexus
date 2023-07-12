@@ -30,8 +30,9 @@ watch(tagSelected, (newTagSelected) => {
   }
   else {
     selectedPosts = sortedPostsByTitle;
+
     let sortedPosts = [];
-    sortedPostsByTitle.map(post => {
+    selectedPosts.map(post => {
       if (post.metadata.tags.find(tag => tag.sys.id === newTagSelected)) sortedPosts.push(post)
     })
     selectedPosts = sortedPosts;

@@ -49,6 +49,11 @@ watch(currentPage, () => {
      //});
 });
 
+watch(() => props.items, () => {
+    // Reset page to 1 when filters have been applied
+    changePage(1);
+});
+
 function getAsset(id) {
     return props.assets.find(post => post.sys.id === id).fields.file.url
 }
@@ -87,7 +92,6 @@ function getAsset(id) {
                             :asset="getAsset(item.fields.asset.sys.id)"
                         />
                     </template>
-                    
                 </div>
             </div>
         </PaginationWrapper>

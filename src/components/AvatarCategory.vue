@@ -23,7 +23,6 @@ const getTags = () => {
       m.sys.id !== 'xavatars' &&
       m.sys.id !== 'avatarsFourHundred') {
         tags.push(m.sys.id)
-        console.log(m.sys.id)
       }
     })
   })

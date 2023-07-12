@@ -1,16 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Templates from '../views/Templates.vue'
-import Renders from '../views/Renders.vue'
-import Avatars from '../views/Avatars.vue'
 
 const routes = [
     { path: '/', name: 'Home', component: Home },
-    { path: '/about', name: 'About', component: About },
-    { path: '/templates', name: 'Templates', component: Templates },
-    { path: '/renders', name: 'Renders', component: Renders },
-    { path: '/avatars', name: 'Avatars', component: Avatars }
+    { path: '/blog/:id', component: () => import('../views/Post.vue') },
+    { path: '/about', name: 'about', component: () => import('../views/About.vue') },
+    { path: '/templates', name: 'templates', component: () => import('../views/Templates.vue') },
+    { path: '/renders', name: 'renders', component: () => import('../views/Renders.vue') },
+    { path: '/avatars', name: 'avatars', component: () => import('../views/Avatars.vue') },
+    { path: '/tutorials', name: 'tutorials', component: () => import('../views/Tutorials.vue') },
+    { path: '/tutorials/:id', name: 'tutorials.post', component: () => import('../views/Post.vue') },
+    //{ path: '/:pathMatch(.*)', component: NotFound }
 ];
 
 const router = createRouter({

@@ -33,12 +33,16 @@ const social = [
     {
         url: "https://steamcommunity.com/id/vizune",
         icon: "steam"
+    },
+    {
+        url: "https://twitter.com/Vizune_",
+        icon: "twitter"
     }
 ]
 </script>
 
 <template>
-    <div class="grid grid-cols-4 gap-8 text-white py-4 px-8">
+    <div class="grid grid-cols-5 gap-8 text-white py-4 px-8">
         <div v-for="item in social">
             <SocialLink :url="item.url" :icon="item.icon" />
         </div>

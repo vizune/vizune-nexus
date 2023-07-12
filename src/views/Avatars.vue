@@ -12,10 +12,10 @@
 
   const posts400 = await fetch(POSTS_AVATARS_400)
   .then((r) => r.json());
-
-  const sortedPosts100 = posts100.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
-  const sortedPosts200 = posts200.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
-  const sortedPosts400 = posts400.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
+  
+  const sortPostsByIndex = (posts) => {
+    return posts.items.sort((a,b) => a.fields.index < b.fields.index ? 1 : -1);
+  }
 
 </script>
 
@@ -27,7 +27,7 @@
         <AvatarCategory 
           :category="100"
           title="100 x 100 avatars"
-          :posts="sortedPosts100"
+          :posts="sortPostsByIndex(posts100)"
           :assets="posts100.includes.Asset"
           :itemsPerPage="20"
         />
@@ -36,7 +36,7 @@
         <AvatarCategory 
           :category="200"
           title="200 x 200 avatars"
-          :posts="sortedPosts200"
+          :posts="sortPostsByIndex(posts200)"
           :assets="posts200.includes.Asset"
           :itemsPerPage="10"
         />
@@ -45,7 +45,7 @@
         <AvatarCategory 
           :category="400"
           title="400 x 400 avatars"
-          :posts="sortedPosts400"
+          :posts="sortPostsByIndex(posts400)"
           :assets="posts400.includes.Asset"
           :itemsPerPage="6"
         />

@@ -15,9 +15,8 @@ provide('selectedTitle', selectedTitle)
                 v-for="title in tabTitles"
                 :key="title"
                 @click="selectedTitle = title"
-                class="w-full"
             >
-                <button :disabled="selectedTitle === title" class="w-full">
+                <button :disabled="selectedTitle === title">
                     {{ title }}
                 </button>
             </li>

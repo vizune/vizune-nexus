@@ -7,6 +7,10 @@ const nav = [
         link: "/"
     },
     {
+        page: "About",
+        link: "/about"
+    },
+    {
         page: "Templates",
         link: "/templates"
     },
