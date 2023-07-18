@@ -11,16 +11,20 @@ const nav = [
         link: "/about"
     },
     {
-        page: "Templates",
-        link: "/templates"
+        page: "Avatars",
+        link: "/avatars"
     },
     {
         page: "Renders",
         link: "/renders"
     },
     {
-        page: "Avatars",
-        link: "/avatars"
+        page: "Templates",
+        link: "/templates"
+    },
+    {
+        page: "Tutorials",
+        link: "/tutorials"
     },
 ]
 </script>

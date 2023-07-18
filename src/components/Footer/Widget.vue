@@ -6,9 +6,9 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="bg-dark w-full">
-        <PatternHeading>{{  heading }}</PatternHeading>
-        <slot />
+    <div class="w-full">
+        <PatternHeading class="text-center text-xxl font-bold text-white border-b-2 border-toadstool">{{  heading }}</PatternHeading>
+        <div class="px-6 pb-6"><slot /></div>
     </div>
 </template>
 

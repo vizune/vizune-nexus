@@ -1,7 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue';
 import { tagReference } from '../../config.js';
-import PatternHeading from '../components/PatternHeading.vue';
 import FilterDropdown from './FilterDropdown.vue';
 import Pagination from './Pagination/Pagination.vue';
 
@@ -61,7 +60,7 @@ const getTagCount = (tagOption) => {
 
 <template>
     <div>
-      <PatternHeading>{{ title }}</PatternHeading>
+      <h2 class="text-center">{{ title }}</h2>
       <div class="mt-4">
         <FilterDropdown v-model="tagSelected" :values="getTags()">
           <option value="">Filter avatars</option>
@@ -98,7 +97,7 @@ const getTagCount = (tagOption) => {
 .wrapper400 {
   grid-template-columns: repeat(auto-fit, 400px);
   margin: 0 -1.625rem;
-  grid-gap: .125rem;
+  grid-gap: .75rem;
 }
 .wrapper400 .wrapper-item {
     flex-direction: column;

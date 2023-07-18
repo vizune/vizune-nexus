@@ -20,7 +20,7 @@ const props = defineProps({
             <p class="mb-0"><strong>Publish Date:</strong> {{ convertDate(fields.date) }}</p>
             <p class="m-0"><strong>Dimensions:</strong> {{ fields.imageDimensions }}</p>
         </div>
-        <div class="flex justify-center mt-1">
+        <div class="flex justify-center mt-1 mb-4">
           <a :href="fields.downloadUrl" target="_blank" class="button w-full">Preview / Download</a>
         </div>
     </div>
@@ -31,5 +31,7 @@ h2 {
   flex-grow: 1;
   font-size: 1.125rem;
   font-weight: 700;
+  border-top: 4px solid var(--hibiscus);
+  padding-top: 1rem;
 }
 </style>

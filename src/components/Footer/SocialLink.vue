@@ -1,11 +1,14 @@
 <script setup>
     const props = defineProps({
         url: String,
-        icon: String
+        icon: String,
+        name: String
     })
 </script>
 <template>
-    <a :href="url" target="_blank" :title="icon" class="hover:text-white">
-        <font-awesome-icon :icon="['fab', icon]" size="2xl" />
+    <a :href="url" target="_blank" :title="name" class="hover:text-white">
+        <svg  class="icon icon-lg">
+            <use :xlink:href="`#${icon}`"></use>
+        </svg>
     </a>
 </template>

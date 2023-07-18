@@ -1,9 +1,10 @@
 <script setup>
 import { computed, ref, watch } from 'vue';
 import PaginationWrapper from './PaginationWrapper.vue';
-import TemplateItem from '../PostItems/TemplateItem.vue';
-import RenderItem from '../PostItems/RenderItem.vue';
 import AvatarItem from '../PostItems/AvatarItem.vue';
+import BlogItem from '../PostItems/BlogItem.vue';
+import RenderItem from '../PostItems/RenderItem.vue';
+import TemplateItem from '../PostItems/TemplateItem.vue';
 
 const props = defineProps({
     items: {
@@ -72,10 +73,10 @@ function getAsset(id) {
                     v-for="(item, index) in displayedItems"
                     :key="`${item.id}--${index}`"
                 >
-                    <template v-if="category === 'templates'">
-                        <TemplateItem 
+                    <template v-if="category === 'avatars'">
+                        <AvatarItem 
                             :fields="item.fields"
-                            :asset="getAsset(item.fields.banner.sys.id)"
+                            :asset="getAsset(item.fields.asset.sys.id)"
                         />
                     </template>
 
@@ -86,10 +87,21 @@ function getAsset(id) {
                         />
                     </template>
 
-                    <template v-if="category === 'avatars'">
-                        <AvatarItem 
+                    <template v-if="category === 'templates'">
+                        <TemplateItem 
                             :fields="item.fields"
-                            :asset="getAsset(item.fields.asset.sys.id)"
+                            :asset="getAsset(item.fields.banner.sys.id)"
+                        />
+                    </template>
+
+                    <template v-if="category === 'tutorials' || category === 'blog'">
+                        <BlogItem 
+                            :title="item.fields.title"
+                            :description="item.fields.description"
+                            :thumbnail="getAsset(item.fields.thumbnail.sys.id)"
+                            :slug="item.fields.slug"
+                            :publishDate="item.fields.publishDate"
+                            :category="category"
                         />
                     </template>
                 </div>

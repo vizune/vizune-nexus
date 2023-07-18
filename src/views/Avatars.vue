@@ -29,7 +29,7 @@
           title="100 x 100 avatars"
           :posts="sortPostsByIndex(posts100)"
           :assets="posts100.includes.Asset"
-          :itemsPerPage="20"
+          :itemsPerPage="24"
         />
       </TabItem>
       <TabItem title="200 x 200">
@@ -38,7 +38,7 @@
           title="200 x 200 avatars"
           :posts="sortPostsByIndex(posts200)"
           :assets="posts200.includes.Asset"
-          :itemsPerPage="10"
+          :itemsPerPage="12"
         />
       </TabItem>
       <TabItem title="400 x 400">

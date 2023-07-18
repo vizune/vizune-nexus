@@ -8,10 +8,13 @@ import LiveChat from './components/LiveChat.vue'
 
 <template>
   <div class="container flex flex-col grow p-0">
-    <Header>
-      <Logo />
-      <Navigation />
-    </Header>
+    <div class="flex">
+      <Header />
+      <div class="bg-stizza w-full p-4">
+        <Logo />
+        <Navigation />
+      </div>
+    </div>
     <div class="bg-white px-4 md:px-6 pt-12 pb-24 bg-footer-lace bg-bottom bg-repeat-x grow">
       <Suspense>
         <router-view />

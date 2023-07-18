@@ -23,7 +23,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+#app {
+  margin: 0 auto;
+  width: 100%;
+}
 a, a:hover, a:focus {
   color: var(--toadstool);
   font-weight: 500;
@@ -57,6 +60,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   text-align: left;
   text-transform: uppercase;
+  width: 100%;
 }
 
 h2 {
@@ -66,8 +70,16 @@ h2 {
 }
 
 ul, ol {
-  list-style: disc;
   padding-left: .8rem;
+  width: 100%;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
 }
 
 button, .button {
@@ -106,11 +118,16 @@ select {
   border: 2px solid var(--stizza);
   border-radius: 0;
 }
-#app {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
+svg.icon {
+  height: 1.6rem;
+  width: 1.5rem;
 }
+
+svg.icon-lg {
+  height: 2rem;
+  width: 2rem;
+}
+
 /* CSS for high-resolution devices */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),

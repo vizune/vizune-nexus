@@ -61,7 +61,7 @@ const getTagCount = (tagOption) => {
     <Pagination
       :items="selectedPosts"
       :itemsPerPage="12"
-      :gridClass="`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5`"
+      gridClass="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"
       :assets="posts.includes.Asset"
       category="renders"
     />

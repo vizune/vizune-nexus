@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div id="logo">
+    <div class="flex justify-center">
         <img src="/logo.png" alt="Vizune" />
     </div>
 </template>

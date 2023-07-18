@@ -12,10 +12,13 @@ const toggleChat = () => {
     <div class="LiveChat flex flex-col align-end" :class="{ 'is-open': toggle }">
         <button class="LiveChat-button" @click="toggleChat">
             <div class="flex justify-between align-center">
-
-                <font-awesome-icon :icon="['fas', `${toggle ? 'circle-arrow-down' : 'circle-arrow-up'}`]" size="xl" />
+                <svg class="icon">
+                    <use :xlink:href="`#${toggle ? 'up' : 'down'}Arrow`"></use>
+                </svg>
                 <span>Live Chat</span>
-                <font-awesome-icon :icon="['fas', 'comment']" size="xl" />
+                <svg class="icon">
+                    <use xlink:href="#comment"></use>
+                </svg>
             </div>
             
         </button>
@@ -39,7 +42,7 @@ const toggleChat = () => {
     width: 350px;
     position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
     transform: translateY(calc(100% - 50px));
     transition: .35s ease;
     z-index: 10;
