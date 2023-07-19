@@ -22,7 +22,6 @@ const options = {
 
 client.getEntry('v9VSZDcP1Xi67fowhL44G')
 .then((entry) => {
-  console.log(entry)
   const rawRichTextField = entry.fields.content;
   document.getElementById('publish-date').innerHTML = convertDate(entry.fields.publishDate);
   document.getElementById('title').innerHTML = entry.fields.title;
