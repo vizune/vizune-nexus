@@ -15,7 +15,7 @@ import LiveChat from './components/LiveChat.vue'
         <Navigation />
       </div>
     </div>
-    <div class="bg-white px-4 md:px-6 pt-12 pb-24 bg-footer-lace bg-bottom bg-repeat-x grow">
+    <div class="bg-white px-4 lg:px-6 pt-12 pb-24 bg-footer-lace bg-bottom bg-repeat-x grow">
       <Suspense>
         <router-view />
       </Suspense>

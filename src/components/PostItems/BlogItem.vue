@@ -30,14 +30,14 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="flex flex-col md:flex-row align-center border-4 border-hibiscus p-2 h-full">
-        <img :src="thumbnail" role="presentation" class="w-64 h-64 mx-auto md:mx-0" />
-        <div class="text-left mt-4 md:mt-0 md:ml-4 flex flex-col h-full w-full">
+    <div class="flex flex-col xl:flex-row align-center border-4 border-hibiscus p-2 h-full">
+        <img :src="thumbnail" role="presentation" class="w-64 h-64 mx-auto xl:mx-0" />
+        <div class="text-left mt-4 xl:mt-0 xl:ml-4 flex flex-col h-full w-full">
             <h2 class="font-bold mb-1">{{ title }}</h2>
             <p class="font-bold text-hibiscus">{{ convertDate(publishDate) }}</p>
             <p class="grow">{{ description }}</p>
         </div>
-        <div class="flex flex-col shrink-0 justify-end md:ml-2">
+        <div class="flex flex-col shrink-0 justify-end xl:ml-2">
             <router-link :to="`/${category}/${slug}`" class="button">Read more</router-link>
         </div>
     </div>
