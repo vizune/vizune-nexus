@@ -4,7 +4,7 @@ import * as contentful from 'contentful';
 import { MARKS } from '@contentful/rich-text-types';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import { convertDate } from '../utilities/convertDate';
-import { cSpace, cAccessToken }  from '../../config.js';
+import { cSpace, cAccessToken }  from '../../config';
 
 const client = contentful.createClient({
   space: cSpace,

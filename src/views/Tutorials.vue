@@ -1,5 +1,5 @@
 <script setup>
-  import { POSTS_TUTORIALS } from '../../config.js';
+  import { POSTS_TUTORIALS } from '../../config';
   import Pagination from '../components/Pagination/Pagination.vue';
 
   const posts = await fetch(POSTS_TUTORIALS)

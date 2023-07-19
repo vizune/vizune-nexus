@@ -1,5 +1,5 @@
 <script setup>
-  import { POSTS_AVATARS_100, POSTS_AVATARS_200, POSTS_AVATARS_400 } from '../../config.js';
+  import { POSTS_AVATARS_100, POSTS_AVATARS_200, POSTS_AVATARS_400 } from '../../config';
   import Tabs from '../components/Tabs/Tabs.vue';
   import TabItem from '../components/Tabs/TabItem.vue';
   import AvatarCategory from '../components/AvatarCategory.vue';

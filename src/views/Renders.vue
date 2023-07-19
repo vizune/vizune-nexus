@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { POSTS_RENDERS, tagReference } from '../../config.js';
+import { POSTS_RENDERS, tagReference } from '../../config';
 import FilterDropdown from '../components/FilterDropdown.vue';
 import Pagination from '../components/Pagination/Pagination.vue';
 
