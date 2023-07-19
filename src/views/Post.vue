@@ -3,7 +3,6 @@
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import { convertDate } from '../utilities/convertDate';
-import { cSpace, cAccessToken }  from '../../constants';
 
 const getLastPath = () => {
   const pathname = window.location.href; 
@@ -37,7 +36,7 @@ function getAsset(id) {
 
 }
 
-await fetch(`https://cdn.contentful.com/spaces/${cSpace}/environments/master/entries?content_type=${category}&fields.slug=${getLastPath()}&limit=1&access_token=${cAccessToken}`)
+await fetch(`https://cdn.contentful.com/spaces/${import.meta.env.VITE_CSPACE}/environments/master/entries?content_type=${category}&fields.slug=${getLastPath()}&limit=1&access_token=${import.meta.env.VITE_CACCESSTOKEN}`)
 .then((r) => r.json())
 .then((entry) => {
   const rawRichTextField = entry.items[0].fields.content;

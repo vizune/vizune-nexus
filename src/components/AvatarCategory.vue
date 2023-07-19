@@ -1,8 +1,8 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { tagReference } from '../../constants';
 import FilterDropdown from './FilterDropdown.vue';
 import Pagination from './Pagination/Pagination.vue';
+import { tagReference } from '../../constants';
 
 const props = defineProps({
     category: Number,
@@ -55,7 +55,6 @@ const getTagCount = (tagOption) => {
 
   return count;
 }
-
 </script>
 
 <template>

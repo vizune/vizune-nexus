@@ -1,10 +1,10 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { postsRenders, tagReference } from '../../constants';
 import FilterDropdown from '../components/FilterDropdown.vue';
 import Pagination from '../components/Pagination/Pagination.vue';
+import { tagReference } from '../../constants';
 
-const posts = await fetch(postsRenders)
+const posts = await fetch(import.meta.env.VITE_POSTS_RENDERS)
 .then((r) => r.json());
 
 const sortedPostsByTitle = posts.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);
@@ -48,7 +48,6 @@ const getTagCount = (tagOption) => {
 
   return count;
 }
-
 </script>
 
 <template>
