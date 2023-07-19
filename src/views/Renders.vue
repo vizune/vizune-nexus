@@ -1,10 +1,10 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { POSTS_RENDERS, tagReference } from '../../config';
+import { postsRenders, tagReference } from '../../constants';
 import FilterDropdown from '../components/FilterDropdown.vue';
 import Pagination from '../components/Pagination/Pagination.vue';
 
-const posts = await fetch(POSTS_RENDERS)
+const posts = await fetch(postsRenders)
 .then((r) => r.json());
 
 const sortedPostsByTitle = posts.items.sort((a,b) => a.fields.title < b.fields.title ? 1 : -1);

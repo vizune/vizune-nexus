@@ -1,16 +1,16 @@
 <script setup>
-  import { POSTS_AVATARS_100, POSTS_AVATARS_200, POSTS_AVATARS_400 } from '../../config';
+  import { postsAvatars100, postsAvatars200, postsAvatars400 } from '../../constants';
   import Tabs from '../components/Tabs/Tabs.vue';
   import TabItem from '../components/Tabs/TabItem.vue';
   import AvatarCategory from '../components/AvatarCategory.vue';
 
-  const posts100 = await fetch(POSTS_AVATARS_100)
+  const posts100 = await fetch(postsAvatars100)
   .then((r) => r.json());
 
-  const posts200 = await fetch(POSTS_AVATARS_200)
+  const posts200 = await fetch(postsAvatars200)
   .then((r) => r.json());
 
-  const posts400 = await fetch(POSTS_AVATARS_400)
+  const posts400 = await fetch(postsAvatars400)
   .then((r) => r.json());
   
   const sortPostsByIndex = (posts) => {

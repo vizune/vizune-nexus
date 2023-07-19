@@ -1,8 +1,8 @@
 <script setup>
-  import { POSTS_TUTORIALS } from '../../config';
+  import { postsTutorials } from '../../constants';
   import Pagination from '../components/Pagination/Pagination.vue';
 
-  const posts = await fetch(POSTS_TUTORIALS)
+  const posts = await fetch(postsTutorials)
   .then((r) => r.json());
   
   const sortedPostsByDate = posts.items.sort((a,b) => a.fields.publishDate < b.fields.publishDate ? 1 : -1);

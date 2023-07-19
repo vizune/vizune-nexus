@@ -3,7 +3,7 @@
 import { BLOCKS, INLINES, MARKS } from '@contentful/rich-text-types';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import { convertDate } from '../utilities/convertDate';
-import { cSpace, cAccessToken }  from '../../config';
+import { cSpace, cAccessToken }  from '../../constants';
 
 const getLastPath = () => {
   const pathname = window.location.href; 
