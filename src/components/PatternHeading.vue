@@ -1,5 +1,5 @@
 <template>
-    <h2 class="text-hibiscus bg-dark mb-1 p-3 relative z-10 before:bg-header-pattern">
+    <h2 class="text-white bg-dark mb-1 p-3 relative z-10 before:bg-header-pattern">
         <span class="font-medium uppercase text-xl tracking-wider">
             <slot />
         </span>
