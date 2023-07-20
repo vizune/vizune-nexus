@@ -1,8 +1,6 @@
 <script setup>
 import Pagination from '../components/Pagination/Pagination.vue';
 
-console.log(import.meta.env.VITE_POSTS_BLOG)
-
 const posts = await fetch(import.meta.env.VITE_POSTS_BLOG)
 .then((r) => r.json());
 
