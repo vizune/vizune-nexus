@@ -10,7 +10,7 @@ import LiveChat from './components/LiveChat.vue'
   <div class="container flex flex-col grow p-0">
     <div class="flex">
       <Header />
-      <div class="bg-stizza w-full p-4">
+      <div class="bg-stizza w-full">
         <Logo />
         <Navigation />
       </div>

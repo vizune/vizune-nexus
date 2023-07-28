@@ -257,6 +257,11 @@ const linkExchangeButtons = [
     name: 'Numbers of the Sky',
     url: 'https://numbersofthesky.tumblr.com/',
     image: '/buttons/numbers-of-the-sky.jpg'
+  },
+  {
+    name: 'Red Velvet',
+    url: 'https://redvelvet.cc/',
+    image: '/buttons/red-velvet.gif'
   }
 ]
 

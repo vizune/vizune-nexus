@@ -26,19 +26,9 @@ const affiliates = [
         button: '/buttons/love-is-zero.png'
     },
     {
-        name: 'Moonflame Designs',
-        url: 'http://mfd.aki-mono.com/',
-        button: '/buttons/moonflame-designs.png'
-    },
-    {
         name: 'A Random Website',
         url: 'https://a-random-website.net/',
         button: '/buttons/random.png'
-    },
-    {
-        name: 'Sea Love',
-        url: 'http://sealove.sheisl0ved.com/',
-        button: '/buttons/sea-love.png'
     },
     {
         name: 'Snow Drops',
@@ -49,7 +39,7 @@ const affiliates = [
 </script>
 
 <template>
-    <div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-center gap-4 my-6 px-6">
+    <div class="grid grid-cols-3 lg:grid-cols-4 justify-center gap-4 my-6 px-6">
         <a v-for="link in affiliates" :href="link.url" target="_blank">
             <img :src="link.button" :alt="`Affiliate: ${link.name} button`" class="border-2 border-white hover:border-toadstool" />
         </a>

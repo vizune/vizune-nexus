@@ -15,7 +15,7 @@ const toggleChat = () => {
                 <svg class="icon">
                     <use :xlink:href="`#${toggle ? 'up' : 'down'}Arrow`"></use>
                 </svg>
-                <span>Live Chat</span>
+                <span>Chat</span>
                 <svg class="icon">
                     <use xlink:href="#comment"></use>
                 </svg>

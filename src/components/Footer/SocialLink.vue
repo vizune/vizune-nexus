@@ -6,7 +6,7 @@
     })
 </script>
 <template>
-    <a :href="url" target="_blank" :title="name" class="hover:text-white">
+    <a :href="url" target="_blank" :title="name" class="text-toadstool hover:text-white">
         <svg  class="icon icon-lg">
             <use :xlink:href="`#${icon}`"></use>
         </svg>

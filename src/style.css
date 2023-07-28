@@ -28,7 +28,6 @@
   width: 100%;
 }
 a, a:hover, a:focus {
-  color: var(--toadstool);
   font-weight: 500;
 }
 
