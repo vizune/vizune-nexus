@@ -224,10 +224,6 @@ const linkExchangeList = [
     url: 'https://mishipaper.tumblr.com/'
   },
   {
-    name: 'Moonstar',
-    url: 'http://moonstar.sheisl0ved.com/'
-  },
-  {
     name: 'Neotokio3TV',
     url: 'https://www.youtube.com/@Neotokio3TV/'
   },

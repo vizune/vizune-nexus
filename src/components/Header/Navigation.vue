@@ -26,11 +26,15 @@ const nav = [
         page: "Tutorials",
         link: "/tutorials"
     },
+    {
+        page: "PSD Downloads",
+        link: "/psd"
+    }
 ]
 </script>
 
 <template>
-    <nav id="navigation mt-4">
+    <nav id="navigation" class="border-b-4 border-stizza">
         <ul class="flex flex-col list-none p-0">
             <NavigationLink v-for="item in nav" :page="item.page" :link="item.link" />
         </ul>

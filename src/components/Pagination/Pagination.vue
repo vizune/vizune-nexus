@@ -5,6 +5,7 @@ import AvatarItem from '../PostItems/AvatarItem.vue';
 import BlogItem from '../PostItems/BlogItem.vue';
 import RenderItem from '../PostItems/RenderItem.vue';
 import TemplateItem from '../PostItems/TemplateItem.vue';
+import PsdItem from '../PostItems/PsdItem.vue';
 
 const props = defineProps({
     items: {
@@ -102,6 +103,13 @@ function getAsset(id) {
                             :slug="item.fields.slug"
                             :publishDate="item.fields.publishDate"
                             :category="category"
+                        />
+                    </template>
+                    
+                    <template v-if="category === 'psd'">
+                        <PsdItem 
+                            :fields="item.fields"
+                            :asset="getAsset(item.fields.thumbnail.sys.id)"
                         />
                     </template>
                 </div>
