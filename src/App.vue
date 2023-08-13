@@ -20,7 +20,7 @@ import LiveChat from './components/LiveChat.vue'
         <router-view />
       </Suspense>
     </div>
-    <Footer  />
+    <Footer />
     <LiveChat />
   </div>
 </template>

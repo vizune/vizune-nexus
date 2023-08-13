@@ -21,6 +21,11 @@ const affiliates = [
         button: '/buttons/the-flamboyant.jpg'
     },
     {
+        name: 'Kouyou Design',
+        url: 'http://kouyou-design.net/',
+        button: '/buttons/kouyou-design.png'
+    },
+    {
         name: 'Love is Zero',
         url: 'https://loveiszero.net/',
         button: '/buttons/love-is-zero.png'
