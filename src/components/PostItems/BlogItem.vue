@@ -36,8 +36,6 @@ const props = defineProps({
             <h2 class="font-bold mb-1">{{ title }}</h2>
             <p class="font-bold text-hibiscus">{{ convertDate(publishDate) }}</p>
             <p class="grow">{{ description }}</p>
-        </div>
-        <div class="flex flex-col shrink-0 justify-end xl:ml-2">
             <router-link :to="`/${category}/${slug}`" class="button">Read more</router-link>
         </div>
     </div>
