@@ -128,6 +128,17 @@ svg.icon-lg {
   width: 2rem;
 }
 
+button svg.icon,
+.button svg.icon {
+  fill: white;
+}
+
+
+button:hover svg.icon,
+.button:hover svg.icon {
+  fill: var(--stizza);
+}
+
 /* CSS for high-resolution devices */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),

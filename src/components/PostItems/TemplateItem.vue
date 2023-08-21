@@ -26,8 +26,32 @@ const props = defineProps({
             <p v-if="fields.character" class="mb-0"><strong>Character:</strong> {{ fields.character }}</p>
         </div>
         <div class="flex justify-center gap-1 mt-1">
-            <a :href="fields.demoUrl" target="_blank" class="button w-full">Preview</a>
-            <a :href="fields.downloadUrl" target="_blank" class="button w-full">Download</a>
+            <a :href="fields.demoUrl" target="_blank" class="button w-full">
+                <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <span>Demo</span>
+                        <svg class="icon ml-2" style="height: 1.15rem">
+                            <use xlink:href="#new-tab"></use>
+                        </svg>
+                    </div>
+                    <svg class="icon">
+                        <use xlink:href="#display"></use>
+                    </svg>
+                </div>
+            </a>
+            <a :href="fields.downloadUrl" target="_blank" class="button w-full">
+                <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <span>Source code</span>
+                        <svg class="icon ml-2" style="height: 1.15rem">
+                            <use xlink:href="#new-tab"></use>
+                        </svg>
+                    </div>
+                    <svg class="icon" style="height: 1.75rem">
+                        <use xlink:href="#code"></use>
+                    </svg>
+                </div>
+            </a>
         </div>
     </div>
 </template>
