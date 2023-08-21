@@ -19,6 +19,7 @@ const props = defineProps({
         <div class="bg-dark text-white gap-1 p-3">
             <p class="mb-0"><strong>Publish Date:</strong> {{ convertDate(fields.date) }}</p>
             <p class="m-0"><strong>Dimensions:</strong> {{ fields.imageDimensions }}</p>
+            <p class="m-0"><strong>File Size:</strong> {{ fields.fileSize }}</p>
         </div>
         <div class="flex justify-center mt-1 mb-4">
           <a :href="fields.downloadUrl" target="_blank" class="button w-full">Preview / Download</a>
