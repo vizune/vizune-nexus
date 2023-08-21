@@ -22,7 +22,19 @@ const props = defineProps({
             <p class="m-0"><strong>File Size:</strong> {{ fields.fileSize }}</p>
         </div>
         <div class="flex justify-center mt-1 mb-4">
-          <a :href="fields.downloadUrl" target="_blank" class="button w-full">Preview / Download</a>
+          <a :href="fields.downloadUrl" target="_blank" class="button w-full">
+                <div class="flex justify-between items-center">
+                    <div class="flex">
+                        <span>Download</span>
+                        <svg class="icon ml-2" style="height: 1.15rem">
+                            <use xlink:href="#new-tab"></use>
+                        </svg>
+                    </div>
+                    <svg class="icon">
+                        <use xlink:href="#download"></use>
+                    </svg>
+                </div>
+            </a>
         </div>
     </div>
 </template>

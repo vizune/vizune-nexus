@@ -36,7 +36,14 @@ const props = defineProps({
             <h2 class="font-bold mb-1">{{ title }}</h2>
             <p class="font-bold text-hibiscus">{{ convertDate(publishDate) }}</p>
             <p class="grow">{{ description }}</p>
-            <router-link :to="`/${category}/${slug}`" class="button">Read more</router-link>
+            <router-link :to="`/${category}/${slug}`" class="button">
+                <div class="flex justify-between items-center">
+                    <span>Read more</span>
+                    <svg class="icon">
+                        <use xlink:href="#rightArrow"></use>
+                    </svg>
+                </div>
+            </router-link>
         </div>
     </div>
 </template>
