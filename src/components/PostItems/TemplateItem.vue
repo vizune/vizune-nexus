@@ -25,7 +25,7 @@ const props = defineProps({
             </p>
             <p v-if="fields.character" class="mb-0"><strong>Character:</strong> {{ fields.character }}</p>
         </div>
-        <div class="flex justify-center gap-1 mt-1">
+        <div class="flex flex-col md:flex-row lg:flex-col xl:flex-row justify-center gap-1 mt-1">
             <a :href="fields.demoUrl" target="_blank" class="button w-full">
                 <div class="flex justify-between items-center">
                     <div class="flex">
