@@ -59,7 +59,7 @@ const getTagCount = (tagOption) => {
 
 <template>
     <div>
-      <h2 class="text-center">{{ title }}</h2>
+      <h2 class="text-center text-dark my-8">{{ title }}</h2>
       <div class="mt-4">
         <FilterDropdown v-model="tagSelected" :values="getTags()">
           <option value="">Filter avatars</option>

@@ -33,8 +33,8 @@ const props = defineProps({
     <div class="flex flex-col xl:flex-row align-center border-4 border-hibiscus p-2 h-full">
         <img :src="thumbnail" role="presentation" class="w-64 h-64 mx-auto xl:mx-0" />
         <div class="text-left mt-4 xl:mt-0 xl:ml-4 flex flex-col h-full w-full">
-            <h2 class="font-bold mb-1">{{ title }}</h2>
-            <p class="font-bold text-hibiscus">{{ convertDate(publishDate) }}</p>
+            <h2 class="font-bold mb-1 text-dark normal-case">{{ title }}</h2>
+            <p class="font-bold">{{ convertDate(publishDate) }}</p>
             <p class="grow">{{ description }}</p>
             <router-link :to="`/${category}/${slug}`" class="button">
                 <div class="flex justify-between items-center">

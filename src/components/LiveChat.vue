@@ -9,10 +9,10 @@ const toggleChat = () => {
 </script>
 
 <template>
-    <div class="LiveChat flex flex-col align-end" :class="{ 'is-open': toggle }">
+    <div class="LiveChat flex flex-col align-end md:fixed mt-4 md:mt-0" :class="{ 'is-open': toggle }">
         <button class="LiveChat-button" @click="toggleChat">
             <div class="flex justify-between align-center">
-                <svg class="icon">
+                <svg class="icon hidden md:block">
                     <use :xlink:href="`#${toggle ? 'up' : 'down'}Arrow`"></use>
                 </svg>
                 <span>Chat</span>
@@ -38,17 +38,17 @@ const toggleChat = () => {
 </template>
 
 <style scoped>
-.LiveChat {
-    width: 350px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    transform: translateY(calc(100% - 50px));
-    transition: .35s ease;
-    z-index: 10;
-}
-
-.LiveChat.is-open {
-    transform: translateY(0);
+@media (min-width: 768px) {
+    .LiveChat {
+        width: 350px;
+        bottom: 0;
+        left: 0;
+        transform: translateY(calc(100% - 50px));
+        transition: .35s ease;
+        z-index: 10;
+    }
+    .LiveChat.is-open {
+        transform: translateY(0);
+    }
 }
 </style>

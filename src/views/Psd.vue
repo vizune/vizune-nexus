@@ -13,7 +13,7 @@
     <h1 class="mb-8">PSD Downloads</h1>
     <Pagination
       :items="sortedPostsByDate"
-      :itemsPerPage="6"
+      :itemsPerPage="9"
       gridClass="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-9"
       :assets="posts.includes.Asset"
       category="psd"
