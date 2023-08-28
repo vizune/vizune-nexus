@@ -12,10 +12,10 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="text-left flex flex-col mb-3 h-full">
-        <h2 class="mb-0 flex flex-col gap-1">{{ fields.title }}</h2>
+    <div class="text-left flex flex-col mb-3 h-full bg-[#f2f2f2]">
+        <h2 class="mb-0 text-center">{{ fields.title }}</h2>
         <img :src="asset" class="mb-1 mx-auto" v-if="asset" width="250" />
-        <div class="flex justify-center mt-4 mb-4">
+        <div class="flex justify-center mt-4">
           <a :href="fields.url" target="_blank" class="button w-full">
                 <div class="flex justify-between items-center">
                     <div class="flex">

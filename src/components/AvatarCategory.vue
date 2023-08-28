@@ -60,16 +60,14 @@ const getTagCount = (tagOption) => {
 <template>
     <div>
       <h2 class="text-center text-dark my-8">{{ title }}</h2>
-      <div class="mt-4">
-        <FilterDropdown v-model="tagSelected" :values="getTags()">
-          <option value="">Filter avatars</option>
-          <option v-for="tag in getTags()" :key="tag" :value="tag">{{ tagReference[tag] }} {{ `(${getTagCount(tag)})` }}</option>
-        </FilterDropdown>
-      </div>
+      <FilterDropdown v-model="tagSelected" :values="getTags()">
+        <option value="">Filter avatars</option>
+        <option v-for="tag in getTags()" :key="tag" :value="tag">{{ tagReference[tag] }} {{ `(${getTagCount(tag)})` }}</option>
+      </FilterDropdown>
       <Pagination
         :items="selectedPosts"
         :itemsPerPage="itemsPerPage"
-        :gridClass="`grid gap-4 wrapper${category} justify-center mt-4`"
+        :gridClass="`grid gap-4 wrapper${category} justify-center mt-8`"
         :assets="props.assets"
         category="avatars"
       />
@@ -95,7 +93,6 @@ const getTagCount = (tagOption) => {
 }
 .wrapper400 {
   grid-template-columns: repeat(auto-fit, 400px);
-  margin: 0 -1.625rem;
   grid-gap: .75rem;
 }
 .wrapper400 .wrapper-item {

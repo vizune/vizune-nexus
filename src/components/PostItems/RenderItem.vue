@@ -13,15 +13,15 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="text-left flex flex-col mb-3 h-full">
-        <h2 class="mb-0 flex flex-col gap-1"><span v-for="text in fields.title.split(/: (.*)/s)">{{ text }}</span></h2>
+    <div class="text-left flex flex-col mb-3 h-full bg-[#f2f2f2]">
+        <h2 class="mb-0 flex flex-col gap-1 pl-4"><span v-for="text in fields.title.split(/: (.*)/s)">{{ text }}</span></h2>
         <img :src="asset" class="mb-1" v-if="asset" />
         <div class="bg-dark text-white gap-1 p-3">
             <p class="mb-0"><strong>Publish Date:</strong> {{ convertDate(fields.date) }}</p>
             <p class="m-0"><strong>Dimensions:</strong> {{ fields.imageDimensions }}</p>
             <p class="m-0"><strong>File Size:</strong> {{ fields.fileSize }}</p>
         </div>
-        <div class="flex justify-center mt-1 mb-4">
+        <div class="flex justify-center mt-1">
           <a :href="fields.downloadUrl" target="_blank" class="button w-full">
                 <div class="flex justify-between items-center">
                     <div class="flex">
