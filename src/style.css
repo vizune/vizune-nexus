@@ -104,15 +104,18 @@ button, .button {
   text-transform: uppercase;
   transition: background-color 0.25s;
 }
-button:hover, .button:hover {
-  color: var(--stizza);
-  background-color: #fff;
-}
 button:focus,
 .button:focus,
 button:focus-visible,
 .button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+  color: #fff;
+}
+button:hover, .button:hover,
+button:focus:hover, 
+.button:focus:hover {
+  color: var(--stizza);
+  background-color: #fff;
 }
 button:disabled,
 .button:disabled {
