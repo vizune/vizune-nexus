@@ -78,7 +78,7 @@ const getTagCount = (tagOption) => {
 
 <style>
 .wrapper100 {
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 250px);
 }
 .wrapper100 .wrapper-info {
     display: flex;
