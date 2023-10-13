@@ -8,10 +8,10 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        sm: '2rem'
+        DEFAULT: '2rem',
+        sm: '1rem'
       },
-      maxWidth: '1200px'
+      maxWidth: '1536px'
     },
     colors: {
       'hibiscus': '#b94951',

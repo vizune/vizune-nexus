@@ -21,6 +21,11 @@ const affiliates = [
         button: '/buttons/the-flamboyant.jpg'
     },
     {
+        name: 'Hakanai',
+        url: 'http://hakanai.net/',
+        button: '/buttons/hakanai.jpg'
+    },
+    {
         name: 'Kouyou Design',
         url: 'http://kouyou-design.net/',
         button: '/buttons/kouyou-design.png'
@@ -36,9 +41,19 @@ const affiliates = [
         button: '/buttons/random.png'
     },
     {
+        name: 'Sea Love',
+        url: 'http://sealove.love-acid.com/',
+        button: '/buttons/sea-love.png'
+    },
+    {
         name: 'Snow Drops',
         url: 'https://snow-drops.org/',
         button: '/buttons/snow-drops.jpg'
+    },
+    {
+        name: 'Twilight Pentagram',
+        url: 'https://twilightpentagram.neocities.org/',
+        button: '/buttons/twilight-pentagram.png'
     }
 ]
 </script>

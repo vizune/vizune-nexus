@@ -6,6 +6,3 @@
         <img src="/header.png" class="h-full object-cover" role="presentation" />
     </header>
 </template>
-
-<style scoped>
-</style>

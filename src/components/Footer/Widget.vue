@@ -7,8 +7,10 @@ const props = defineProps({
 
 <template>
     <div class="w-full">
-        <PatternHeading class="text-center text-xxl font-bold text-white">{{  heading }}</PatternHeading>
-        <div class="px-6 pb-6"><slot /></div>
+        <PatternHeading class="text-center text-xxl font-bold text-white">{{ heading }}</PatternHeading>
+        <div class="px-6 pb-6">
+            <slot />
+        </div>
     </div>
 </template>
 
