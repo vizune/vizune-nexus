@@ -91,6 +91,7 @@ function getAsset(id) {
                     <template v-if="category === 'templates'">
                         <TemplateItem 
                             :fields="item.fields"
+                            :tags="item.metadata.tags"
                             :asset="getAsset(item.fields.banner.sys.id)"
                         />
                     </template>

@@ -9,13 +9,50 @@ const props = defineProps({
     },
     asset: {
         type: String
+    },
+    tags: {
+        type: Array
     }
 })
+
+const tagInfo = [
+    {
+        name: 'tailwind',
+        url: 'https://tailwindcss.com/',
+        title: 'This template has been built with Tailwind CSS framework'
+    },
+    {
+        name: 'vue',
+        url: 'https://vuejs.org/',
+        title: 'This template has been built with Vue JavaScript framework'
+    },
+    {
+        name: 'bootstrap',
+        url: 'https://getbootstrap.com/docs/3.4/',
+        title: 'This template has been built with Bootstrap v3.4 CSS framework'
+    }
+]
+
+const getTagInfo = (tag) => {
+    return tagInfo.find((item) => item.name === tag);
+}
+
 </script>
 
 <template>
     <div class="text-left mb-6 flex flex-col h-full">
-        <PatternHeading>{{ fields.title }}</PatternHeading>
+        <PatternHeading>
+            <div class="flex justify-between">
+                <span>{{ fields.title }}</span>
+                <div class="flex gap-4" v-if="tags">
+                    <a v-for="tag in tags" :href="getTagInfo(tag.id).url" :title="getTagInfo(tag.id).title">
+                        <svg class="icon">
+                            <use :xlink:href="`#${tag.sys.id}`"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </PatternHeading>
         <img :src="asset" class="mb-1" v-if="asset" />
         <div class="bg-dark text-white grow flex flex-col gap-1 py-3 px-5 justify-center">
             <p class="mb-0"><strong>Publish Date:</strong> {{ convertDate(fields.publishDate) }}</p>
