@@ -262,6 +262,11 @@ const linkExchangeButtons = [
     name: 'Red Velvet',
     url: 'https://redvelvet.cc/',
     image: '/buttons/red-velvet.gif'
+  },
+  {
+    name: 'Twilight Pentagram',
+    url: 'https://twilightpentagram.neocities.org/',
+    button: '/buttons/twilight-pentagram.png'
   }
 ]
 

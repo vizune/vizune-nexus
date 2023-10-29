@@ -49,11 +49,6 @@ const affiliates = [
         name: 'Snow Drops',
         url: 'https://snow-drops.org/',
         button: '/buttons/snow-drops.jpg'
-    },
-    {
-        name: 'Twilight Pentagram',
-        url: 'https://twilightpentagram.neocities.org/',
-        button: '/buttons/twilight-pentagram.png'
     }
 ]
 </script>
