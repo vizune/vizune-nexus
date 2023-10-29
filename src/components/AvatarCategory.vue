@@ -55,6 +55,8 @@ const getTagCount = (tagOption) => {
 
   return count;
 }
+
+console.log(selectedPosts)
 </script>
 
 <template>
