@@ -105,6 +105,7 @@ export const tagReference={
     finalFantasyXv: "Final Fantasy XV",
     fiveStarStories: "Five Star Stories",
     forsakenWorld: "Forsaken World",
+    fullmetalAlchemist: "Fullmetal Alchemist",
     futureDiary: "Future Diary",
     gakuenKakumeidenMitsurugiNakayoshi: "Gakuen Kakumeiden Mitsurugi Nakayoshi",
     gekkouNoCarnevale: "Gekkou no Carnevale",
@@ -141,6 +142,7 @@ export const tagReference={
     mondaijiTachi: "Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?",
     nagiNoAsukara: "Nagi no Asukara",
     nier: "Nier",
+    noGameNoLife: "No Game No Life",
     noMoreHeroes: "No More Heroes",
     noragami: "Noragami",
     notLives: "Not Lives",
@@ -191,6 +193,7 @@ export const tagReference={
     theTaleOfAncientSwords: "The Legend of the Ancient Sword Online",
     theWitchAndTheHundredKnight: "The Witch and the Hundred Knight",
     timeAndEternity: "Time and Eternity",
+    tokyoGhoul: "Tokyo Ghoul",
     tokyoMewMew: "Tokyo Mew Mew",
     touhou: "Touhou",
     trigun: "Trigun",
@@ -205,7 +208,9 @@ export const tagReference={
     worldOfWarcraft: "World of Warcraft",
     x: 'X',
     xenosaga: "Xenosaga",
+    xxxHoLiC: "xxxHOLiC",
     yamiToBoushiToHonNoTabibito: "Yami to Bōshi to Hon no Tabibito",
+    yourName: "Your Name",
     yuruCamp: "Yuru Camp",
     zettaiNaruIsolator: "Zettai Naru Isolator"
 };
