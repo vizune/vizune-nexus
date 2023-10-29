@@ -266,7 +266,7 @@ const linkExchangeButtons = [
   {
     name: 'Twilight Pentagram',
     url: 'https://twilightpentagram.neocities.org/',
-    button: '/buttons/twilight-pentagram.png'
+    image: '/buttons/twilight-pentagram.png'
   }
 ]
 
