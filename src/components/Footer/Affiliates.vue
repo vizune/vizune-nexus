@@ -16,6 +16,11 @@ const affiliates = [
         button: '/buttons/aurora-veil.png'
     },
     {
+        name: 'Fae Icons',
+        url: 'https://icons.moudoku.com/',
+        button: '/buttons/fae-icons.png'
+    },
+    {
         name: 'The Flamboyant',
         url: 'http://theflamboyant.net/',
         button: '/buttons/the-flamboyant.jpg'

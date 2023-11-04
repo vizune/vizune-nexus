@@ -13,7 +13,7 @@ const sortedPostsByDate = posts.items.sort((a,b) => a.fields.publishDate < b.fie
       <h1>News & Updates</h1>
       <Pagination
         :items="sortedPostsByDate"
-        :itemsPerPage="4"
+        :itemsPerPage="6"
         gridClass="grid grid-cols-1 lg:grid-cols-2 gap-5"
         :assets="posts.includes.Asset"
         category="blog"
