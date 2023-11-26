@@ -31,7 +31,7 @@ const props = defineProps({
 
 <template>
     <div class="flex flex-col xl:flex-row align-center border-4 border-hibiscus p-2 h-full">
-        <img :src="thumbnail" role="presentation" class="w-64 h-64 mx-auto xl:mx-0" />
+        <img :src="thumbnail" role="presentation" class="w-[15.625rem] h-[15.625rem] mx-auto xl:mx-0" />
         <div class="text-left mt-4 xl:mt-0 xl:ml-4 flex flex-col h-full w-full">
             <h2 class="font-bold mb-1 text-dark normal-case">{{ title }}</h2>
             <p class="font-bold">{{ convertDate(publishDate) }}</p>
