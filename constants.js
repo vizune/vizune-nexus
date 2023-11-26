@@ -202,6 +202,7 @@ export const tagReference={
     trillionGodOfDestruction: "Trillion: God of Destruction",
     trinityBlood: "Trinity Blood",
     trinitySeven: "Trinity Seven",
+    tsubasaReservoirChronicle: "Tsubasa Reservoir Chronicle",
     vampireKnight: "VampireKnight",
     vTR: "V.T.R",
     vocaloid: "Vocaloid",
