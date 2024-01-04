@@ -14,7 +14,7 @@
     <Pagination
       :items="sortedPostsByDate"
       :itemsPerPage="9"
-      gridClass="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-9"
+      gridClass="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-9"
       :assets="posts.includes.Asset"
       category="psd"
     >
