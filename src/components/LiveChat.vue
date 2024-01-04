@@ -40,9 +40,9 @@ const toggleChat = () => {
 <style scoped>
 @media (min-width: 768px) {
     .LiveChat {
-        width: 350px;
+        width: 300px;
         bottom: 0;
-        left: 0;
+        right: 0;
         transform: translateY(calc(100% - 50px));
         transition: .35s ease;
         z-index: 10;
