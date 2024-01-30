@@ -267,6 +267,11 @@ const linkExchangeButtons = [
     name: 'Twilight Pentagram',
     url: 'https://twilightpentagram.neocities.org/',
     image: '/buttons/twilight-pentagram.png'
+  },
+  {
+    name: 'Violin Star',
+    url: 'https://violinstar.net/',
+    image: '/buttons/violin-star.gif'
   }
 ]
 
