@@ -13,7 +13,7 @@
     <Pagination
       :items="sortedPostsByDate"
       :itemsPerPage="6"
-      gridClass="grid grid-cols-1 md:grid-cols-2 gap-5"
+      gridClass="grid grid-cols-1 md:grid-cols-2 gap-9"
       :assets="posts.includes.Asset"
       category="tutorials"
     >
