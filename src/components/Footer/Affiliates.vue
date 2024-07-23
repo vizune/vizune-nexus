@@ -6,6 +6,11 @@ const affiliates = [
         button: '/buttons/affelius.png'
     },
     {
+        name: 'Aestharis',
+        url: 'https://aestharis.net/',
+        button: '/buttons/aestharis.png'
+    },
+    {
         name: 'A Glimpsed Horizon',
         url: 'https://akiba.flirt-wind.net/',
         button: '/buttons/a-glimpsed-horizon.png'
@@ -64,7 +69,7 @@ const affiliates = [
 </script>
 
 <template>
-    <div class="grid grid-cols-3 lg:grid-cols-4 justify-center gap-4 my-6 px-6">
+    <div class="grid grid-cols-3 lg:grid-cols-5 justify-center gap-4 my-6 px-6">
         <a v-for="link in affiliates" :href="link.url" target="_blank">
             <img 
                 :src="link.button" 
