@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 <template>
     <h1 class="tracking-wider mb-5">
-        <span class="font-monsterrat text-md font-bold mt-[-4rem]" v-if="small">{{ small }}</span>
+        <span class="font-monsterrat text-md font-bold mt-[-4rem] text-center max-w-[170px]" v-if="small">{{ small }}</span>
         <span class="font-forum text-3xl text-purple uppercase" v-if="large">{{ large }}</span>
     </h1>
 </template>

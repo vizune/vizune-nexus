@@ -72,9 +72,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 <template>
   <Content>
-      <h1 id="title">{{ title }}</h1>
-      <hr />
-      <span id="publish-date" class="block text-sm font-bold mt-4">{{ date }}</span>
+      <HeadingTitle :small="title" :large="date" />
       <div id="rich-text-body" class="my-4 flex flex-wrap justify-center" v-html="content"></div>
       <hr />
       <div id="disqus_thread" class="mt-8"></div>
@@ -83,6 +81,12 @@ s.setAttribute('data-timestamp', +new Date());
 </template>
 
 <style>
+ul {
+  width: 100%;
+  list-style: disclosure-closed;
+  padding-left: 1.5rem;
+}
+
 ol > li {
   display: flex;
   flex-wrap: wrap;
@@ -115,5 +119,9 @@ pre {
   border: 2px solid #ccc;
   border-radius: 10px;
   overflow-x: auto;
+}
+
+h2 {
+  width: 100%;
 }
 </style>
