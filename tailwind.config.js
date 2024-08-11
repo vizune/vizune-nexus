@@ -1,34 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",  
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: '2rem',
-        sm: '1rem'
-      },
-      maxWidth: '1536px'
-    },
-    colors: {
-      'hibiscus': '#b94951',
-      'toadstool': '#b82731',
-      'stizza': '#870b0c',
-      'dark': '#111',
-      'stone': '#3D4351',
-      'grey': '#999',
-      'white': '#fff'
-    },
     extend: {
-      backgroundImage: {
-        'footer-lace': "url('/lace.png')",
-        'header-pattern': "url('/mask.png')",
-      }
+      colors: {
+        'midnight': '#020006',
+        'charcoal': '#030309',
+        'ocean': '#90c2f5',
+        'carmine': '#cb1140',
+        'peach': '#ffac85',
+        'purple': '#281DF7',
+        'ice': '#bbffff',
+        'white': '#f2f2f2'
+      },
+      fontFamily: {
+        montserrat: ['"Montserrat"', "sans-serif"],
+        forum: ['"Forum"', "serif"]
+      },
     },
   },
   plugins: [],
 }
-
