@@ -1,16 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/google-fonts", "@nuxt/image"],
+  modules: ["@nuxtjs/google-fonts", "@nuxt/image", "nuxt-gtag"],
   css: ['~/assets/scss/style.scss'],
-
   components: [
     {
       path: '~/components',
       pathPrefix: true,
     },
   ],
-
   googleFonts: {
     display: 'swap',
     families: {
@@ -21,7 +19,6 @@ export default defineNuxtConfig({
       },
     }
   },
-
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -32,7 +29,6 @@ export default defineNuxtConfig({
             : false, // disable cssnano when not in production
      },
   },
-
   runtimeConfig: {
     public: {
       cSpace: process.env.NUXT_PUBLIC_cSPACE,
@@ -47,6 +43,7 @@ export default defineNuxtConfig({
       tutorials: process.env.NUXT_PUBLIC_POSTS_TUTORIALS
     }
   },
-
-  compatibilityDate: '2024-08-11'
+  gtag: {
+    id: 'GTM-5765QP'
+  }
 })

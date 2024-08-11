@@ -27,7 +27,7 @@ const sortPostsByIndex = (posts) => {
           title="100 x 100 avatars"
           :posts="sortPostsByIndex(posts100)"
           :assets="posts100.includes.Asset"
-          :itemsPerPage="25"
+          :itemsPerPage="24"
         />
       </TabsItem>
       <TabsItem title="200 x 200">
