@@ -125,3 +125,49 @@ svg.icon {
         width: 2rem;
     }
 }
+
+ul {
+    width: 100%;
+    list-style: disclosure-closed;
+    padding-left: 1.5rem;
+}
+
+ol {
+    counter-reset: point;
+
+    & > li {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+
+        &:before {
+            counter-increment: point;
+            content: counter(point)".) ";
+            font-weight: bold;
+            color: var(--purple);
+            font-size: 1.5rem;
+        }
+    }
+}
+
+pre {
+    line-height: 24px;
+    background-image: linear-gradient(180deg, #eee 50%, #fff 50%);
+    background-size: 100% 48px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow-x: auto;
+ }
+
+.ContentfulPost {
+    p {
+        width: 100%;
+    }
+      
+      
+    h2 {
+        width: 100%;
+    }
+}
