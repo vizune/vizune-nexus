@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-center grow">
-      <div class="h-[375px] translate-y-[-1.5rem]">
+      <div class="h-[375px]">
         <span class="font-forum uppercase text-4xl block text-center tracking-wider leading-[0] text-white">
           <NuxtImg
             src="/arch.svg"

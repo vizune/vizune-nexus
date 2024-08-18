@@ -12,10 +12,7 @@
 <template>
   <div>
     <IconSprite />
-    <div class="h-screen flex flex-col justify-between">
-        <HeadingIntro>Obelisk: Nocturna</HeadingIntro>
-      <Header />
-    </div>
+    <Header />
     <Navigation />
     <nuxt-page />
     <Footer />

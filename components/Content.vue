@@ -18,7 +18,7 @@
                 />
             </div>
             <div class="border-4 border-midnight flex flex-col justify-between py-[4rem] md:py-6 md:pb-[8rem]">
-                <div class="px-6 md:px-[4rem] xl:px-[8rem] py-6 grow-1">
+                <div class="px-4 md:px-[4rem] xl:px-[8rem] py-6 grow-1">
                     <slot />
                 </div> 
             </div>
