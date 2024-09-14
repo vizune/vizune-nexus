@@ -57,7 +57,7 @@ const pages = computed(() => {
 <template>
     <div>
         <slot></slot>
-        <div class="flex justify-center gap-5 w-full mt-8" v-if="pages.length > 1">
+        <div class="flex justify-center gap-5 w-full my-8" v-if="pages.length > 1">
             <button
                 type="button"
                 v-for="page in pages"
