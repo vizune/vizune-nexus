@@ -2,7 +2,7 @@
     <div class="flex items-center justify-center grow">
       <div class="h-[375px]">
         <span class="font-forum uppercase text-4xl block text-center tracking-wider leading-[0] text-white">
-          <NuxtImg
+          <img
             src="/arch.svg"
             width="300"
             height="214"
@@ -10,7 +10,7 @@
             class="mx-auto"
           />
           <slot />
-          <NuxtImg
+          <img
             src="/arch.svg"
             width="300"
             height="214"
