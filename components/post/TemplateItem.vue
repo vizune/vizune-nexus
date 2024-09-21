@@ -14,10 +14,11 @@ const props = defineProps({
 
 <template>
     <div class="text-left mb-8 flex flex-col h-full">
-        <h2 class="font-bold my-4">{{ fields.title }}</h2>
-        <img :src="asset" class="mb-1" v-if="asset" />
+        <h2 class="font-bold no-underline mt-6 mb-2">{{ fields.title }}</h2>
+        <img :src="asset" class="border-t-8 border-black mb-1" v-if="asset" />
         <div class="bg-charcoal text-white grow flex flex-col gap-1 p-5 justify-center">
             <p class="mb-0"><strong>Publish Date:</strong> {{ convertDate(fields.publishDate) }}</p>
+            <p v-if="fields.techStack" class="mb-0"><strong>Tech Stack:</strong> {{ fields.techStack }}</p>
             <p v-if="fields.category" class="mb-0"><strong>Category:</strong> {{ fields.category }}</p>
             <p v-if="fields.series" class="mb-0">
                 <strong>{{ fields.category && fields.category === "Mangaka/Artist" ? "Artist:" : "Series:" }}</strong> {{ fields.series }}
