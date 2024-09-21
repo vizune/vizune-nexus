@@ -17,7 +17,7 @@ provide('selectedTitle', selectedTitle)
                 @click="selectedTitle = title"
                 class="grow w-full lg:w-auto"
             >
-                <button :class="{ active: selectedTitle === title }" class="bg-carmine border-4 border-carmine w-full relative z-10 p-3 text-left">
+                <button :class="{ active: selectedTitle === title }" class="bg-carmine hover:bg-white border-4 border-carmine w-full relative z-10 p-3 text-left hover:text-carmine">
                     <span>{{ title }}</span>
                 </button>
             </li>
