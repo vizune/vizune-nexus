@@ -2,6 +2,21 @@
 useHead({
   title: 'Vizune.com - About'
 })
+
+function calculateAge(birthDate) {
+    const today = new Date();
+    const birth = new Date(birthDate);
+
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDiff = today.getMonth() - birth.getMonth();
+
+    // Adjust the age if the birthday hasn't occurred yet this year
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+        age--;
+    }
+
+    return age;
+}
 </script>
 
 <template>
@@ -53,7 +68,7 @@ useHead({
           <div>
             <ul class="mb-4">
               <li><strong>Name:</strong> Sasha</li>
-              <li><strong>Age:</strong> 32</li>
+              <li><strong>Age:</strong> {{ calculateAge('1991-03-22') }}</li>
               <li><strong>Birthday:</strong> 22nd March</li>
               <li><strong>Location:</strong> England</li>
               <li><strong>Career:</strong> UI Engineer (10+ years experience in Front End Web Development)</li>
