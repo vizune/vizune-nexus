@@ -132,10 +132,6 @@ const designSources = [
     url: 'http://www.obsidiandawn.com/'
   },
   {
-    name: 'Quiescent (Closed)',
-    url: 'http://quiescent.three-words.net/'
-  },
-  {
     name: 'Ryoko30 @ DeviantArt',
     url: 'http://ryoko30.deviantart.com/'
   },
