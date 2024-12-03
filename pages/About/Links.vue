@@ -39,9 +39,19 @@ const linkExchangeButtons = [
     image: '/buttons/eccentricity.png'
   },
   {
+    name: 'Kingdra',
+    url: 'https://kingdra.net/',
+    image: '/buttons/kingdra.png'
+  },
+  {
     name: 'Numbers of the Sky',
     url: 'https://numbersofthesky.tumblr.com/',
     image: '/buttons/numbers-of-the-sky.jpg'
+  },
+  {
+    name: 'Question Point',
+    url: 'https://thequestpoint.wordpress.com/',
+    image: '/buttons/question-point.webp'
   },
   {
     name: 'Red Velvet',
@@ -76,14 +86,14 @@ const linkExchangeButtons = [
     <ul class="my-4 list-none flex flex-wrap gap-4">
         <li v-for="button in linkExchangeButtons">
         <a :href="button.url" :title="button.name" target="_blank">
-            <img :src="button.image">
+            <img :src="button.image" width="88px" height="31px">
         </a>
         </li>
     </ul>
 
     <ul class="my-4">
         <li v-for="link in linkExchangeList">
-        <a :href="link.url" target="_blank">{{ link.name }}</a>
+          <a :href="link.url" target="_blank">{{ link.name }}</a>
         </li>
     </ul>
   </Content>
