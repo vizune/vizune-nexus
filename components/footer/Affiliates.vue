@@ -57,7 +57,7 @@ const affiliates = [
     },
     {
         name: 'Sea Love',
-        url: 'http://sealove.love-acid.com/',
+        url: 'http://sealove.sheisl0ved.com/',
         button: '/buttons/sea-love.png'
     },
     {
