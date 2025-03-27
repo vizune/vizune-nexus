@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue';
-import { tagReference } from '../../constants';
+import { tagReference } from '~/constants';
 
 const props = defineProps({
     category: Number,

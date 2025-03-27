@@ -27,11 +27,7 @@ const nav = [
     {
         name: 'Tutorials',
         url: '/tutorials'
-    },
-    {
-        name: 'Reviews',
-        url: '/reviews'
-    },
+    }
 ]
 </script>
 
