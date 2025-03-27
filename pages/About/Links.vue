@@ -24,11 +24,6 @@ const linkExchangeList = [
 
 const linkExchangeButtons = [
   {
-    name: 'Aqua Cure',
-    url: 'https://graphics.twilight-realm.com/',
-    image: '/buttons/aqua-cure.png'
-  },
-  {
     name: 'Dark Passion GFX',
     url: 'http://www.dp-gfx.de',
     image: '/buttons/dark-passion-gfx.jpg'
@@ -62,11 +57,6 @@ const linkExchangeButtons = [
     name: 'Twilight Pentagram',
     url: 'https://twilightpentagram.neocities.org/',
     image: '/buttons/twilight-pentagram.png'
-  },
-  {
-    name: 'Violin Star',
-    url: 'https://violinstar.net/',
-    image: '/buttons/violin-star.gif'
   }
 ]
 

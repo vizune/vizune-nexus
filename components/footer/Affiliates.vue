@@ -63,7 +63,7 @@ const affiliates = [
     {
         name: 'Violin Star',
         url: 'https://violinstar.net',
-        button: null
+        button: '/buttons/violin-star.gif'
     }
 ]
 </script>
