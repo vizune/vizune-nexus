@@ -33,7 +33,7 @@ const affiliates = [
     {
         name: 'Kishou',
         url: 'https://kishou.net/',
-        button: '/buttons/aestharis.png'
+        button: null
     },
     {
         name: 'Kouyou Design',
@@ -59,6 +59,11 @@ const affiliates = [
         name: 'Snow Drops',
         url: 'https://snow-drops.org/',
         button: '/buttons/snow-drops.jpg'
+    },
+    {
+        name: 'Violin Star',
+        url: 'https://violinstar.net',
+        button: null
     }
 ]
 </script>
@@ -69,9 +74,10 @@ const affiliates = [
             v-for="link in affiliates" 
             :href="link.url" 
             target="_blank" 
-            class="flex items-center justify-center relative border border-ocean h-[39px] w-[96px] text-center text-midnight hover:bg-ocean"
+            class="flex items-center justify-center relative border border-ocean h-[39px] w-[96px] text-center text-white hover:text-midnight hover:bg-ocean"
         >
             <span class="text-xs uppercase tracking-wider p-1">{{ link.name }}</span>
+
             <NuxtImg 
                 format="webp" 
                 :alt="`Affiliate: ${link.name} button`" 
@@ -80,6 +86,7 @@ const affiliates = [
                 width="88"
                 height="31"
                 class="absolute top-[3px] left-[3px]"
+                v-if="link.button"
             />
         </a>
     </div>
