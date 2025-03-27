@@ -11,8 +11,8 @@
                 />
                 <NuxtImg 
                     format="webp" 
-                    width="149"
-                    height="150" 
+                    width="150"
+                    height="149" 
                     src="/floral-corner.png" 
                     role="presentation" 
                 />
@@ -32,8 +32,8 @@
                 />
                 <NuxtImg 
                     format="webp"
-                    width="149"
-                    height="150"
+                    width="150"
+                    height="149"
                     src="/floral-corner.png"
                     role="presentation" 
                 />
@@ -56,8 +56,8 @@ $corner-offset: 1px;
             position: absolute;
             top: $corner-offset;
             left: $corner-offset;
-            height: $corner-height;
-            width: $corner-width;
+            height: 150px;
+            width: 149px;
         }
 
         > *:last-child {
@@ -65,8 +65,8 @@ $corner-offset: 1px;
             position: absolute;
             top: $corner-offset;
             right: $corner-offset;
-            height: $corner-height;
-            width: $corner-width;
+            height: 149px;
+            width: 150px;
             transform: rotate(90deg);
         }
     }
@@ -79,8 +79,8 @@ $corner-offset: 1px;
             position: absolute;
             bottom: $corner-offset;
             left: $corner-offset;
-            height: $corner-height;
-            width: $corner-width;
+            height: 149px;
+            width: 150px;
             transform: rotate(-90deg);
         }
 
@@ -88,8 +88,8 @@ $corner-offset: 1px;
             position: absolute;
             bottom: $corner-offset;
             right: $corner-offset;
-            height: $corner-height;
-            width: $corner-width;
+            height: 149px;
+            width: 150px;
             transform: rotate(180deg);
         }
     }

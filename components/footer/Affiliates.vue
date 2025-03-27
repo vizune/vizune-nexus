@@ -1,11 +1,6 @@
 <script setup lang="ts">
 const affiliates = [
     {
-        name: 'Aestharis',
-        url: 'https://aestharis.net/',
-        button: '/buttons/aestharis.png'
-    },
-    {
         name: 'Affelius',
         url: 'https://affeli.us/',
         button: '/buttons/affelius.png'
@@ -21,11 +16,6 @@ const affiliates = [
         button: '/buttons/aurora-veil.png'
     },
     {
-        name: 'Dorkistic',
-        url: 'http://www.dorkistic.net/',
-        button: '/buttons/dorkistic.png'
-    },
-    {
         name: 'Fae Icons',
         url: 'https://icons.moudoku.com/',
         button: '/buttons/fae-icons.png'
@@ -39,6 +29,11 @@ const affiliates = [
         name: 'Hakanai',
         url: 'http://hakanai.net/',
         button: '/buttons/hakanai.jpg'
+    },
+    {
+        name: 'Kishou',
+        url: 'https://kishou.net/',
+        button: '/buttons/aestharis.png'
     },
     {
         name: 'Kouyou Design',
