@@ -15,16 +15,16 @@ const affiliates = [
         url: 'https://auroraveil.org/',
         button: '/buttons/aurora-veil.png'
     },
-    {
+/*    {
         name: 'Fae Icons',
         url: 'https://icons.moudoku.com/',
         button: '/buttons/fae-icons.png'
     },
-    {
+     {
         name: 'The Flamboyant',
         url: 'http://theflamboyant.net/',
         button: '/buttons/the-flamboyant.jpg'
-    },
+    }, */
     {
         name: 'Hakanai',
         url: 'http://hakanai.net/',
@@ -69,7 +69,7 @@ const affiliates = [
 </script>
 
 <template>
-    <div class="grid grid-cols-3 sm:grid-cols-4 xl:grid-cols-5 justify-center gap-2 sm:gap-4 my-4 lg:px-6">
+    <div class="grid grid-cols-3 sm:grid-cols-4 justify-center gap-2 sm:gap-4 my-4 lg:px-6">
         <a 
             v-for="link in affiliates" 
             :href="link.url" 

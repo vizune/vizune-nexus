@@ -16,8 +16,8 @@ const sortedPostsByDate = posts.items.sort((a,b) => a.fields.publishDate < b.fie
     <HeadingTitle small="Web" large="Templates" />
     <Pagination
       :items="sortedPostsByDate"
-      :itemsPerPage="6"
-      gridClass="grid grid-cols-1 lg:grid-cols-2 gap-5"
+      :itemsPerPage="4"
+      gridClass="grid grid-cols-1 gap-5"
       :assets="posts.includes.Asset"
       category="templates"
     >
