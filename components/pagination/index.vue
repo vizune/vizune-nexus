@@ -23,6 +23,7 @@ const props = defineProps({
     }
 })
 
+const wrapper = ref(null);
 const currentPage = ref(1);
 const itemsPerPage = ref(props.itemsPerPage);
 
@@ -38,11 +39,35 @@ function changePage(pageNumber) {
     currentPage.value = pageNumber;
 }
 
+function smoothScrollToElement(element, duration = 800) {
+    const targetY = element.getBoundingClientRect().top + window.pageYOffset;
+    const startY = window.pageYOffset;
+    const distance = targetY - startY;
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        // Ease-in-out function
+        const ease = 0.5 * (1 - Math.cos(Math.PI * progress));
+
+        window.scrollTo(0, startY + distance * ease);
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+
+    requestAnimationFrame(animation);
+}
+
+
 watch(currentPage, () => {
-    //window.scrollTo({
-         //top: 0,
-         //behavior: 'smooth'
-     //});
+    if (wrapper.value) {
+        smoothScrollToElement(wrapper.value, 1300); // 1000ms = 1 second
+    }
 });
 
 watch(() => props.items, () => {
@@ -63,7 +88,7 @@ function getAsset(id) {
             :currentPage="currentPage"
             @changePage="changePage"
         >
-            <div :class="gridClass">
+            <div :class="gridClass" ref="wrapper">
                 <div
                     v-for="(item, index) in displayedItems"
                     :key="`${item.id}--${index}`"
