@@ -14,9 +14,9 @@ const sortedPostsByDate = posts.items.sort((a,b) => a.fields.publishDate < b.fie
     <Content>
         <HeadingTitle small="Welcome to" large="Vizune" />
         <blockquote class="font-forum mb-8">
-            <p>Obelisk: Nocturna is best viewed with the curtains closed, lights off and listening to <a href="https://open.spotify.com/track/2SHzX7kPO4SBmBGsqnH6nN?si=2f81be5c66154553" target="_blank">"Luma" by The M Machine.</a></p>
-            <p>Wanna check out <a href="https://github.com/vizune/vizune-nexus" target="_blank">how it was built with code?</a></p>
-            <span>- Sasha, <cite>Vizune.com</cite></span>
+            <p class="font-bold">Welcome to Vizune — my creative sanctuary where anime, gaming, design, and web development collide.</p>
+            <p>Here, I explore visual storytelling through graphics and web templates — sharing resources and tutorials to inspire your own digital creations.</p>
+            <span>- Sasha</span>
         </blockquote>
         <Pagination
             :items="sortedPostsByDate"
