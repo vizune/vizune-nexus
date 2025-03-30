@@ -63,7 +63,6 @@ function smoothScrollToElement(element, duration = 800) {
     requestAnimationFrame(animation);
 }
 
-
 watch(currentPage, () => {
     if (wrapper.value) {
         smoothScrollToElement(wrapper.value, 1300); // 1000ms = 1 second
@@ -76,7 +75,13 @@ watch(() => props.items, () => {
 });
 
 function getAsset(id) {
-    return props.assets.find(post => post.sys.id === id).fields.file.url
+    if (!id || !props.assets) return '';
+    const asset = props.assets.find(post => post.sys?.id === id);
+    if (!asset) {
+        console.warn(`Asset with id ${id} not found.`);
+        return '';
+    }
+    return asset.fields?.file?.url || '';
 }
 </script>
 
