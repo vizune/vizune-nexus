@@ -78,15 +78,12 @@ const getTagCount = (tagOption) => {
 }
 .wrapper100 .wrapper-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+    margin-top: .5rem;
 }
 .wrapper200 {
   grid-template-columns: repeat(auto-fit, 200px);
 }
 .wrapper200 .wrapper-item {
-    flex-direction: column;
     width: 200px;
 }
 .wrapper400 {
@@ -94,11 +91,6 @@ const getTagCount = (tagOption) => {
   grid-gap: .75rem;
 }
 .wrapper400 .wrapper-item {
-    flex-direction: column;
     width: 400px;
-}
-.wrapper200 .wrapper-info,
-.wrapper400 .wrapper-info {
-    text-align: center;
 }
 </style>

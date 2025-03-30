@@ -11,10 +11,10 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="wrapper-item text-left flex h-full">
+    <div class="wrapper-item text-left flex flex-col items-center h-full">
         <img :src="asset" />
-        <div class="wrapper-info bg-charcoal text-white gap-1 p-2 grow">
-            <span class="text-sm text-center break-words">{{ fields.category }}</span>
+        <div class="wrapper-info bg-charcoal text-white gap-1 p-2 grow w-full">
+            <span class="text-xs text-center break-words block w-full">{{ fields.category }}</span>
         </div>
     </div>
 </template>
