@@ -71,16 +71,16 @@ function calculateAge(birthDate) {
               <li><strong>Age:</strong> {{ calculateAge('1991-03-22') }}</li>
               <li><strong>Birthday:</strong> 22nd March</li>
               <li><strong>Location:</strong> England</li>
-              <li><strong>Career:</strong> UI Engineer (10+ years experience in Front End Web Development)</li>
-              <li><strong>Random stuff:</strong> I'm left-handed, I have 4 tattoos, I have a red belt in kickboxing & currently taking Tai Chi classes, I have 2 female black british shorthair cats called Magic & Nelly.</li>
+              <li><strong>Career:</strong> Software Engineer (10+ years experience specialising in Front End Web Development & dabble in Back End Development along the way)</li>
+              <li><strong>Random stuff:</strong> I'm left-handed, I have 5 tattoos, I have a red belt in kickboxing & currently taking Tai Chi classes, I have 2 female black british shorthair cats called Magic & Nelly.</li>
             </ul>
 
             <h2 class="mb-2">Favourites</h2>
-            <p><strong>Favourite anime:</strong> Ghost in the Shell: Innocence, Cowboy Bebop, Nana, Mob Psycho 100, Kakegurui, Dead Leaves, Saint Young Man, Paradise Kiss, Witchblade, Ponyo, Promare, Made in Abyss, Fate/Stay Night series, Chainsaw Man, Paprika, Noragami, Durarara!!, Elfen Lied, Ergo Proxy, Serial Experiments Lain, Simoun, Flip Flappers, Kill la Kill, Space Dandy, Tenchi Muyo, Outlaw Star</p>
-            <p><strong>Favourite games:</strong> Final Fantasy X, Labyrinth of Refrain: Coven of Dusk, Persona Q, Bayonetta, Dark Cloud, Final Fantasy XIV, Tasomachi, Darkstalkers, X-Men vs. Street Fighter, Marvel vs. Capcom, Puzzle Street Fighter, Divinity: Original Sin, Legend of Zelda: Breath of the Wild, Tropico 6, Mario Kart, Zero Escape Trilogy, Dynasty Warriors: Empires, Dungeons of Dredmor, Sims, Shrouded Isle, Advance Wars</p>
+            <p><strong>Favourite anime:</strong> Ghost in the Shell: Innocence, Cowboy Bebop, Nana, Mob Psycho 100, Kakegurui, Dead Leaves, Saint Young Man, Paradise Kiss, Witchblade, Ponyo, Promare, Made in Abyss, Fate/Stay Night series, Chainsaw Man, Paprika, Noragami, Durarara!!, Elfen Lied, Ergo Proxy, Serial Experiments Lain, Simoun, Flip Flappers, Kill la Kill, Space Dandy, Tenchi Muyo, Outlaw Star, The Apothecary Diaries</p>
+            <p><strong>Favourite games:</strong> Final Fantasy X, Bayonetta, Nier: Automata, Labyrinth of Refrain: Coven of Dusk, Persona Q, Dark Cloud, Tasomachi, Darkstalkers, X-Men vs. Street Fighter, Puzzle Street Fighter, Divinity: Original Sin, Cyberpunk 2077, Legend of Zelda: Breath of the Wild, Tropico 6, Mario Kart, Zero Escape Trilogy, Dynasty Warriors, Dungeons of Dredmor, Sims, Shrouded Isle, Advance Wars</p>
             <p><strong>Favourite artists/mangakas:</strong> Hyunga Tae Kim, Ugetsu Hakua, Kilian Eng, Carnelian, Range Murata, Miwa Shirow, Nardack, redjuice, LANGE, H2SO4, Ideolo</p>
-            <p><strong>Favourite music genres:</strong> Drum and Bass, Hard Techno, Psytrance, Dance/Electronic, J-pop, Post Punk, Funk / Soul</p>
-            <p><strong>Favourite music:</strong> The Prodigy, Missy Elliott, Leftfield, Chemical Brothers, KAYTRANADA, Yuksek, Brutalismus 3000, Half Alive, iyla, Moderat, Massive Attack, Max Cooper, Bonobo, Bicep, ALEX, Owl Vision, Ashnikko, Kendrick Lamar, GHOST DATA, Iniko, Jungle, Greentea Peng, Tanerelle, Moonchild, ✧BRAINDAAMAGE✧, N-Vitral, Wombo, Dry Cleaning, Wine Lips</p>
+            <p><strong>Favourite music genres:</strong> Drum and Bass, Hard Techno, Psytrance, Dance/Electronic, House, J-pop, Post Punk, Shoe Gaze, Industrial, Funk / Soul / Jazz</p>
+            <p><strong>Favourite music:</strong> The Prodigy, Missy Elliott, Leftfield, Chemical Brothers, Fatboy Slim, Basement Jaxx, KAYTRANADA, Yuksek, Brutalismus 3000, Half Alive, Bambie Thug, Poppy, Djerv, DJ Hybrid, Moderat, Massive Attack, Max Cooper, Bonobo, Bicep, ALEX, Owl Vision, Ashnikko, Kendrick Lamar, GHOST DATA, Nvoke, Jungle, Greentea Peng, Tanerelle, Moonchild, ✧BRAINDAAMAGE✧, N-Vitral, Wombo, Dry Cleaning, Wine Lips, IDLES</p>
           </div>
         </div>
         
