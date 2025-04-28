@@ -34,6 +34,11 @@ const linkExchangeButtons = [
     image: '/buttons/eccentricity.png'
   },
   {
+    name: 'Faded Morning',
+    url: 'https://faded-morning.carrd.co/',
+    image: '/buttons/faded-morning.gif'
+  },
+  {
     name: 'Kingdra',
     url: 'https://kingdra.net/',
     image: '/buttons/kingdra.png'

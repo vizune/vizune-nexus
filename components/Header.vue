@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-wrap justify-center relative mx-auto h-[500px] w-full overflow-hidden" ref="header">
-      <div class="relative w-full">
+      <div class="flex justify-center relative w-full">
         <picture>
           <source media="(max-width: 640px)" srcset="/header-xs.webp" />
           <source media="(max-width: 1024px)" srcset="/header-md.webp" />

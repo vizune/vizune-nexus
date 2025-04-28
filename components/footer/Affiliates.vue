@@ -46,6 +46,11 @@ const affiliates = [
         button: '/buttons/love-is-zero.png'
     },
     {
+        name: 'Prideful Moon',
+        url: 'https://pridefulmoon.com/',
+        button: '/buttons/prideful-moon.jpg'
+    },
+    {
         name: 'A Random Website',
         url: 'https://a-random-website.net/',
         button: '/buttons/random.png'
