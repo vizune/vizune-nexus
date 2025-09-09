@@ -64,11 +64,6 @@ const affiliates = [
         name: 'Snow Drops',
         url: 'https://snow-drops.org/',
         button: '/buttons/snow-drops.jpg'
-    },
-    {
-        name: 'Violin Star',
-        url: 'https://violinstar.net',
-        button: '/buttons/violin-star.gif'
     }
 ]
 </script>
