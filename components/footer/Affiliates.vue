@@ -19,16 +19,16 @@ const affiliates = [
         name: 'Fae Icons',
         url: 'https://icons.moudoku.com/',
         button: '/buttons/fae-icons.png'
-    },
-     {
-        name: 'The Flamboyant',
-        url: 'http://theflamboyant.net/',
-        button: '/buttons/the-flamboyant.jpg'
     }, */
     {
         name: 'Hakanai',
         url: 'http://hakanai.net/',
         button: '/buttons/hakanai.jpg'
+    },
+    {
+        name: 'Kinku',
+        url: 'https://kuroi-inku.aniyu.net/',
+        button: '/buttons/kinku.gif'
     },
     {
         name: 'Kishou',
