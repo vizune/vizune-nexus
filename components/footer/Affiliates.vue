@@ -64,6 +64,11 @@ const affiliates = [
         name: 'Snow Drops',
         url: 'https://snow-drops.org/',
         button: '/buttons/snow-drops.jpg'
+    },
+    {
+        name: 'Untamed Rebel',
+        url: 'https://untamed-rebel.blogspot.com/',
+        button: '/buttons/untamed-rebel.png'
     }
 ]
 </script>
